@@ -1,0 +1,168 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+
+    
+    color: #333; /* Dark text for readability */
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #0277bd; /* Dark blue for headings to match the theme */
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: #ffffff; /* Light white background for the navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for navbar */
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+    color: #0288d1; /* Soft blue text for navbar brand */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #0288d1; /* Soft blue links for navbar */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #81d4fa; /* Light blue hover effect */
+  }
+  
+  /* Card Styles for Products */
+  .card {
+    border: 1px solid #81d4fa; /* Light blue border for the cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Soft shadow for the cards */
+    background-color: #ffffff; /* White card background */
+  }
+  
+  .card-title {
+    color: #0288d1; /* Soft blue for the card title */
+  }
+  
+  .card-text {
+    color: #555; /* Slightly darker text color for product description */
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: #81d4fa; /* Light blue background for buttons */
+    border-color: #81d4fa; /* Matching border color */
+  }
+  
+  .btn-primary:hover {
+    background-color: #4fc3f7; /* Slightly darker blue on hover */
+  }
+  
+  .btn-danger {
+    background-color: #ff5252; /* Soft red background for remove button */
+    border-color: #ff5252;
+  }
+  
+  .btn-danger:hover {
+    background-color: #ff1744; /* Darker red on hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #ffffff; /* White footer background */
+    color: #0288d1; /* Soft blue text for footer */
+    padding: 1rem 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
+  }
+  
+  footer a {
+    color: #0288d1; /* Blue footer links */
+  }
+  
+  footer a:hover {
+    color: #81d4fa; /* Light blue on hover for links */
+  }
+  
+  /* Container and Spacing */
+  .container {
+    margin-top: 50px;
+  }
+  
+  /* Responsive Styles for Smaller Screens */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .card {
+      margin-bottom: 1rem;
+    }
+  
+    .container {
+      margin-top: 30px;
+    }
+  }
+  
+  /* Global fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Button hover glow */
+.btn {
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Navbar animation */
+.navbar {
+  animation: slideDown 0.8s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
